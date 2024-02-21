@@ -1,0 +1,25 @@
+SO, I have solved how to save a Skeema html saved file so that it shows all the content, or at least the URL's...
+
+Steps to Do (Endure):
+1. You have to go to the project's page in Skeema in your browser
+2. Hit the Share icon
+3. Slide the slider over to show blue on the Get viewer link section
+4. Click the Open in new tab icon to the right of the URL dialog, which is a small square with an arrow pointing to the top right of the square
+This will open the Shared Skeema page in a new tab
+5. Use the FILE -> SAVE function in your browser to save the file locally, using the Webpage, Complete format.  This will NOT work otherwise.
+6. Edit the HTML file and at the top of the file you'll find a line that is similar to the below:
+```
+<!-- saved from url=(0045)https://web.skeema.com/p/bAxcuK8tnH5Yvz8qeTyD -->
+```
+7.  While in that file, add a line to the TOP of the file that uses that URL where you see my SKEEMASHAREURLHERE in the example below:
+```
+<base href="SKEEMASHAREURLHERE">
+```
+8.  This will give you a file with the top two lines that look like this:
+```
+<base href="https://web.skeema.com/p/bAxcuK8tnH5Yvz8qeTyD">
+<!-- saved from url=(0045)https://web.skeema.com/p/bAxcuK8tnH5Yvz8qeTyD -->
+```
+10.  Save this file, it's now able to show the URL's from the Skeema page you saved.
+
+Note:  yes, there are things that could work better, all the circles and fancy icons aren't working, but you can now save your project pages locally and not LOSE everything if Skeema goes away.
